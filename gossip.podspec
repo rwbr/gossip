@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
   s.frameworks = s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia', 'CoreVideo', 'CoreAudio', 'Foundation'
   s.requires_arc = true
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/**" }
   s.dependency "pjsip", "~> 2.2"
 
 end
