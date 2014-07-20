@@ -6,12 +6,26 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B2680946195F6E53002E8E0E /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B2680949195F6E53002E8E0E /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				B268094A195F6E5A002E8E0E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		221BED7F15B0310000464679 /* GSECodecsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BED7E15B0310000464679 /* GSECodecsViewController.m */; };
-		221BED8315B0338F00464679 /* GSCodecInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 221BED8115B0338F00464679 /* GSCodecInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		221BED8315B0338F00464679 /* GSCodecInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 221BED8115B0338F00464679 /* GSCodecInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221BED8415B0338F00464679 /* GSCodecInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BED8215B0338F00464679 /* GSCodecInfo.m */; };
-		221BED8715B034CD00464679 /* GSCodecInfo+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 221BED8515B034CD00464679 /* GSCodecInfo+Private.h */; };
-		222D263015A702D00035CB04 /* GSDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 222D262E15A702D00035CB04 /* GSDispatch.h */; };
+		221BED8715B034CD00464679 /* GSCodecInfo+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 221BED8515B034CD00464679 /* GSCodecInfo+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222D263015A702D00035CB04 /* GSDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 222D262E15A702D00035CB04 /* GSDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		222D263115A702D00035CB04 /* GSDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D262F15A702D00035CB04 /* GSDispatch.m */; };
 		2242FB8B15A6D8A500B34D4F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242FB8A15A6D8A500B34D4F /* CoreAudio.framework */; };
 		2242FB8D15A6D8B000B34D4F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242FB8C15A6D8B000B34D4F /* CFNetwork.framework */; };
@@ -20,9 +34,9 @@
 		2242FB9515A6D90000B34D4F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242FB9315A6D8FC00B34D4F /* AVFoundation.framework */; };
 		2242FB9615A6D90000B34D4F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242FB9115A6D8F500B34D4F /* AudioToolbox.framework */; };
 		224A003B15A6F1F100CC5890 /* libGossip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD824315A5987C0000D05C /* libGossip.a */; };
-		224A003C15A6F21100CC5890 /* PJSIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD82EA15A5A3CC0000D05C /* PJSIP.h */; };
-		224A003D15A6F21600CC5890 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7115A6B2A900CD541C /* Util.h */; };
-		224A004415A6FA2600CC5890 /* GSPJUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 224A004215A6FA2600CC5890 /* GSPJUtil.h */; };
+		224A003C15A6F21100CC5890 /* PJSIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD82EA15A5A3CC0000D05C /* PJSIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		224A003D15A6F21600CC5890 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7115A6B2A900CD541C /* Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		224A004415A6FA2600CC5890 /* GSPJUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 224A004215A6FA2600CC5890 /* GSPJUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		224A004515A6FA2600CC5890 /* GSPJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 224A004315A6FA2600CC5890 /* GSPJUtil.m */; };
 		224A004A15A6FD9B00CC5890 /* GSEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224A004715A6FD9800CC5890 /* GSEMenuViewController.m */; };
 		224A004D15A6FFBC00CC5890 /* GSEMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224A004C15A6FFBC00CC5890 /* GSEMenuViewController.xib */; };
@@ -33,12 +47,12 @@
 		224AFFF515A6E9E200CC5890 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224AFFEF15A6E9C500CC5890 /* CoreMedia.framework */; };
 		224AFFF615A6E9E200CC5890 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224AFFED15A6E9AB00CC5890 /* CoreVideo.framework */; };
 		224AFFF715A6E9F600CC5890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224EFF9115A6D27600CD541C /* CoreGraphics.framework */; };
-		224EFF7515A6B97F00CD541C /* GSConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7315A6B97F00CD541C /* GSConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		224EFF7515A6B97F00CD541C /* GSConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7315A6B97F00CD541C /* GSConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		224EFF7615A6B97F00CD541C /* GSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFF7415A6B97F00CD541C /* GSConfiguration.m */; };
-		224EFF7915A6BAEC00CD541C /* Gossip.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7815A6BA9000CD541C /* Gossip.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		224EFF8115A6C7D100CD541C /* GSAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7F15A6C7D100CD541C /* GSAccount.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		224EFF7915A6BAEC00CD541C /* Gossip.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7815A6BA9000CD541C /* Gossip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		224EFF8115A6C7D100CD541C /* GSAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF7F15A6C7D100CD541C /* GSAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		224EFF8215A6C7D100CD541C /* GSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFF8015A6C7D100CD541C /* GSAccount.m */; };
-		224EFF8615A6CC1F00CD541C /* GSAccountConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF8415A6CC1F00CD541C /* GSAccountConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		224EFF8615A6CC1F00CD541C /* GSAccountConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 224EFF8415A6CC1F00CD541C /* GSAccountConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		224EFF8715A6CC1F00CD541C /* GSAccountConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFF8515A6CC1F00CD541C /* GSAccountConfiguration.m */; };
 		224EFF8F15A6D27600CD541C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224EFF8E15A6D27600CD541C /* UIKit.framework */; };
 		224EFF9015A6D27600CD541C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD824615A5987C0000D05C /* Foundation.framework */; };
@@ -48,23 +62,23 @@
 		224EFF9E15A6D27600CD541C /* GSEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFF9D15A6D27600CD541C /* GSEAppDelegate.m */; };
 		224EFFAD15A6D39200CD541C /* GSERootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFFAA15A6D37D00CD541C /* GSERootViewController.m */; };
 		224EFFB615A6D7D000CD541C /* GSEConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFFB315A6D7C300CD541C /* GSEConfigurationViewController.m */; };
-		225D129615B67DA40041F416 /* GSUserAgent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 225D129415B67DA40041F416 /* GSUserAgent+Private.h */; };
-		225D129C15B6B2780041F416 /* GSNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D43D8015AAA5270099C79F /* GSNotifications.h */; };
-		226F92B015DB9CB00013A997 /* GSRingback.h in Headers */ = {isa = PBXBuildFile; fileRef = 226F92AE15DB9CB00013A997 /* GSRingback.h */; };
+		225D129615B67DA40041F416 /* GSUserAgent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 225D129415B67DA40041F416 /* GSUserAgent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225D129C15B6B2780041F416 /* GSNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D43D8015AAA5270099C79F /* GSNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		226F92B015DB9CB00013A997 /* GSRingback.h in Headers */ = {isa = PBXBuildFile; fileRef = 226F92AE15DB9CB00013A997 /* GSRingback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		226F92B115DB9CB00013A997 /* GSRingback.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F92AF15DB9CB00013A997 /* GSRingback.m */; };
 		226F92B215DB9D260013A997 /* ringtone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22C0F0F115D52676006947BC /* ringtone.wav */; };
 		227D1BC7161ADE2D003247EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 227D1BC6161ADE2D003247EB /* Default-568h@2x.png */; };
-		227F444015E23004007C364C /* GSAccount+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 227F443E15E23004007C364C /* GSAccount+Private.h */; };
+		227F444015E23004007C364C /* GSAccount+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 227F443E15E23004007C364C /* GSAccount+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD824715A5987C0000D05C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AD824615A5987C0000D05C /* Foundation.framework */; };
-		22AD82DD15A5A1550000D05C /* GSUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD82DB15A5A1550000D05C /* GSUserAgent.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		22AD82DD15A5A1550000D05C /* GSUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD82DB15A5A1550000D05C /* GSUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD82DE15A5A1550000D05C /* GSUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AD82DC15A5A1550000D05C /* GSUserAgent.m */; };
-		22B7D11015AE8A8E0045C54A /* GSOutgoingCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D10E15AE8A8E0045C54A /* GSOutgoingCall.h */; };
+		22B7D11015AE8A8E0045C54A /* GSOutgoingCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D10E15AE8A8E0045C54A /* GSOutgoingCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B7D11115AE8A8E0045C54A /* GSOutgoingCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7D10F15AE8A8E0045C54A /* GSOutgoingCall.m */; };
-		22B7D11515AE93DC0045C54A /* GSCall+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D11315AE93DC0045C54A /* GSCall+Private.h */; };
-		22B7D11915AE95A50045C54A /* GSIncomingCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D11715AE95A50045C54A /* GSIncomingCall.h */; };
+		22B7D11515AE93DC0045C54A /* GSCall+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D11315AE93DC0045C54A /* GSCall+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B7D11915AE95A50045C54A /* GSIncomingCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B7D11715AE95A50045C54A /* GSIncomingCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B7D11A15AE95A50045C54A /* GSIncomingCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B7D11815AE95A50045C54A /* GSIncomingCall.m */; };
 		22D43D8315AAA5FE0099C79F /* GSNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D43D8215AAA5FE0099C79F /* GSNotifications.m */; };
-		22D43D8615AAC1C40099C79F /* GSCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D43D8415AAC1C40099C79F /* GSCall.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		22D43D8615AAC1C40099C79F /* GSCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D43D8415AAC1C40099C79F /* GSCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D43D8715AAC1C40099C79F /* GSCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D43D8515AAC1C40099C79F /* GSCall.m */; };
 		22D43D9115AAC9120099C79F /* GSECallInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D43D8E15AAC90B0099C79F /* GSECallInitController.m */; };
 		22D43D9415AACD680099C79F /* GSECallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D43D9315AACD680099C79F /* GSECallViewController.m */; };
@@ -462,6 +476,7 @@
 			targets = (
 				22AD824215A5987C0000D05C /* Gossip */,
 				224EFF8B15A6D27600CD541C /* GossipExample */,
+				B2680946195F6E53002E8E0E /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
@@ -496,6 +511,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		B268094A195F6E5A002E8E0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target Gossip ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target Gossip -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/usr/local/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
 		};
 		B95B18FED4604E5C9BFF022A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -716,6 +744,20 @@
 			};
 			name = Release;
 		};
+		B2680947195F6E53002E8E0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2680948195F6E53002E8E0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -742,6 +784,15 @@
 			buildConfigurations = (
 				22AD825115A5987C0000D05C /* Debug */,
 				22AD825215A5987C0000D05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2680949195F6E53002E8E0E /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2680947195F6E53002E8E0E /* Debug */,
+				B2680948195F6E53002E8E0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
